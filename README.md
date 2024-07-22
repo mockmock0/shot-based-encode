@@ -36,7 +36,7 @@ shot-sw.bat <파일이름> <프레임 보간 배율> <인코더> <프리셋> <VM
 
 ## 일반 인코딩 결과물과 비교
 [reference video](https://www.youtube.com/watch?v=tbWugSQ7kCk) <br>
-하드웨어 : RTX 3060 8GB
+하드웨어 : RTX 3060 8GB <br>
 일반 인코딩 작업 대비 시간 약 3배 소요
 
 |분류|작업 흐름|영상 포맷|예상 VMAF|용량|작업 시간|
