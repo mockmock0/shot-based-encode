@@ -23,7 +23,8 @@ shot-sw.bat <파일이름> <프레임 보간 배율> <인코더> <프리셋> <VM
 * shot-nvenc.bat "test.mxf" 2 "libsvtav1" 5 95
 * shot-sw.bat "foo.mkv" 1 "libx264" fastest 93
 * shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96 <br>
-
+## 코드 설명
+[노션 참고](https://www.notion.so/Shot-based-Encoding-a9c6c8c325a64f419093b4399c200de4)
 
 ## 유의사항
 * 파일 이름과 인코더는 쌍따옴표로 감쌀 것
