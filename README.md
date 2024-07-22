@@ -27,7 +27,6 @@ shot-sw.bat <파일 이름> <프레임 보간 배율> <인코더> <프리셋> <V
 
 ## 일반 인코딩 결과물과 비교
 [reference video](https://www.youtube.com/watch?v=tbWugSQ7kCk)
-* 
 |:---:|:---:|:---:|:---:|
 |분류|작업 흐름|용량|작업 시간|
 |Original| -- | 64.2MB | -- |
