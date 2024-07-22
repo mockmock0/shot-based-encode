@@ -11,7 +11,7 @@
 
 # 사용법
 .bat 파일을 동영상 경로로 이동시킨 후 다음을 실행한다.
-shot-sw.bat <파일 이름> <프레임 보간 배율> <인코더> <프리셋> <VMAF>
+shot-sw.bat 파일이름 프레임보간배율 인코더 프리셋 VMAF
 
 예시)
 * shot-nvenc.bat "test.mxf" 2 "libsvtav1" 5 95
