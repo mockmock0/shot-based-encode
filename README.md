@@ -9,7 +9,7 @@
 
 
 ## 선택 라이브러리
-* [RIFE-ncnn-vulkan](https://github.com/TNTwise/rife-ncnn-vulkan)
+* [RIFE-ncnn-vulkan](https://github.com/TNTwise/rife-ncnn-vulkan) (환경변수 설정 권장)
 
 
 ## 사용법
