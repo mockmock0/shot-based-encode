@@ -2,10 +2,10 @@
 영상을 장면별로 자른 후 각 장면의 퀄리티 측정 및 재인코딩 작업 수행
 
 
-## 필수 라이브러리 (환경변수 설정 권장)
-* [FFmpeg](https://www.gyan.dev/ffmpeg/builds/)
+## 필수 라이브러리 
+* [FFmpeg](https://www.gyan.dev/ffmpeg/builds/) (환경변수 설정 권장)
+* [ab-av1](https://github.com/alexheretic/ab-av1) (환경변수 설정 권장)
 * [pySceneDetect](https://www.scenedetect.com/download/)
-* [ab-av1](https://github.com/alexheretic/ab-av1)
 
 
 ## 선택 라이브러리
