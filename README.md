@@ -34,8 +34,8 @@ shot-sw.bat 파일이름 프레임보간배율 인코더 프리셋 VMAF
 [reference video](https://www.youtube.com/watch?v=tbWugSQ7kCk)
 일반 인코딩 작업 대비 시간 약 3배 소요
 
-|분류|작업 흐름|용량|작업 시간|
-|:---:|:---:|:---:|:---:|
-|Original| - | 64.2MB | - |
-|Whole-Encode| FlowFrames(프레임 2배 보간, scene-detection 미사용)<br/>ab-av1 | <span style="color:red">69.5MB</span> | <span style="color:aliceblue">9분 35초</span> |
-|Shot-Based-Encode| pySceneDetection<br/>rife-ncnn-vulkan<br/>ab-av1 | <span style="color:aliceblue">37.3MB</span> | <span style="color:red">29분 32초</span> |
+|분류|작업 흐름|인코더|용량|작업 시간|
+|:---:|:---:|:---:|:---:|:---:|
+|Original| - | VP9 | 64.2MB | - |
+|Whole-Encode| FlowFrames(프레임 2배 보간, scene-detection 미사용)<br/>ab-av1 |HEVC (NVENC)| <span style="color:red">69.5MB</span> | <span style="color:aliceblue">9분 35초</span> |
+|Shot-Based-Encode| pySceneDetection<br/>rife-ncnn-vulkan<br/>ab-av1 |HEVC (NVENC)| <span style="color:aliceblue">37.3MB</span> | <span style="color:red">29분 32초</span> |
