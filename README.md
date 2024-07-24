@@ -22,7 +22,11 @@ shot-sw.bat <파일이름> <프레임 보간 배율> <인코더> <프리셋> <VM
 단일 파일 처리 명령어 예시
 ```
 shot-nvenc.bat "test.mxf" 2 "libsvtav1" 5 95
+```
+```
 shot-sw.bat "foo.mkv" 1 "libx264" fastest 93
+```
+```
 shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96
 ```
 다중 파일 처리 명령어 예시
