@@ -33,7 +33,8 @@ shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96
 ```
 for %f in ( *.mp4 ) do call shot-sw.bat "%f" 1 "libx264" fastest 93
 ```
- <br>
+<br>
+
 ## 코드 설명
 [노션 참고](https://www.notion.so/Shot-based-Encoding-a9c6c8c325a64f419093b4399c200de4)
 
