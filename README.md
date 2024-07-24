@@ -19,10 +19,17 @@
 
 shot-sw.bat <파일이름> <프레임 보간 배율> <인코더> <프리셋> <VMAF>
 
-예시)
-* shot-nvenc.bat "test.mxf" 2 "libsvtav1" 5 95
-* shot-sw.bat "foo.mkv" 1 "libx264" fastest 93
-* shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96 <br>
+단일 파일 처리 명령어 예시
+```
+shot-nvenc.bat "test.mxf" 2 "libsvtav1" 5 95
+shot-sw.bat "foo.mkv" 1 "libx264" fastest 93
+shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96
+```
+다중 파일 처리 명령어 예시
+```
+for %f in ( *.mp4 ) do call shot-sw.bat "%f" 1 "libx264" fastest 93
+```
+ <br>
 ## 코드 설명
 [노션 참고](https://www.notion.so/Shot-based-Encoding-a9c6c8c325a64f419093b4399c200de4)
 
