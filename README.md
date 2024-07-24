@@ -1,6 +1,7 @@
 ## 장면 기반 영상 인코딩 프로세스
 영상을 장면별로 자른 후 각 장면의 퀄리티 측정 및 재인코딩 작업 수행
 <br>
+<br>
 
 ## 필수 라이브러리 
 * [FFmpeg](https://www.gyan.dev/ffmpeg/builds/) (환경변수 설정 권장)
@@ -37,6 +38,7 @@ for %f in ( *.mp4 ) do call shot-sw.bat "%f" 1 "libx264" fastest 93
 
 ## 코드 설명
 [노션 참고](https://www.notion.so/Shot-based-Encoding-a9c6c8c325a64f419093b4399c200de4)
+<br>
 
 ## 유의사항
 * 파일 이름과 인코더는 쌍따옴표로 감쌀 것
