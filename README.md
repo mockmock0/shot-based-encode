@@ -34,6 +34,9 @@ shot-nvenc.bat "ipsum.mp4" 1 "hevc_nvenc" slow 96
 ```
 for %f in ( *.mp4 ) do call shot-sw.bat "%f" 1 "libx264" fastest 93
 ```
+```
+for %f in ( *.mkv ) do call shot-nvenc.bat "%f" 2 "libvpx-vp9" fast 95 && shutdown -s -t 60
+```
 <br>
 
 ## 코드 설명
