@@ -1,16 +1,16 @@
 ## 장면 기반 영상 인코딩 프로세스
-영상을 장면별로 자른 후 각 장면의 퀄리티 측정 및 재인코딩 작업 수행 <br>
-
+영상을 장면별로 자른 후 각 장면의 퀄리티 측정 및 재인코딩 작업 수행
+<br>
 
 ## 필수 라이브러리 
 * [FFmpeg](https://www.gyan.dev/ffmpeg/builds/) (환경변수 설정 권장)
 * [ab-av1](https://github.com/alexheretic/ab-av1) (환경변수 설정 권장)
-* [pySceneDetect](https://www.scenedetect.com/download/) <br>
-
+* [pySceneDetect](https://www.scenedetect.com/download/)
+<br>
 
 ## 선택 라이브러리
-* [RIFE-ncnn-vulkan](https://github.com/TNTwise/rife-ncnn-vulkan) (환경변수 설정 권장) <br>
-
+* [RIFE-ncnn-vulkan](https://github.com/TNTwise/rife-ncnn-vulkan) (환경변수 설정 권장)
+<br>
 
 ## 사용법
 1. .bat 파일을 동영상 경로로 이동
@@ -43,12 +43,14 @@ for %f in ( *.mp4 ) do call shot-sw.bat "%f" 1 "libx264" fastest 93
 * RIFE-ncnn-vulkan은 v4.18을 사용하므로, 지원되는지 확인이 필요함
 * 인코더와 프리셋 파라미터는 FFmpeg의 규칙에 따를 것
 * VMAF 점수는 93~96을 권장함
-* 프로세스를 거친 결과물은 VMAF 측정 불가능 <br>
-  
+* 프로세스를 거친 결과물은 VMAF 측정 불가능
+<br>
 
 ## 일반 인코딩 결과물과 비교
-[reference video](https://www.youtube.com/watch?v=tbWugSQ7kCk) <br>
-하드웨어 : RTX 3060 8GB <br>
+[reference video](https://www.youtube.com/watch?v=tbWugSQ7kCk)
+<br>
+하드웨어 : RTX 3060 8GB
+<br>
 일반 인코딩 작업 대비 시간 약 3배 소요
 
 |분류|작업 흐름|영상 포맷|예상 VMAF|용량|작업 시간|
