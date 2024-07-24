@@ -44,7 +44,7 @@ for %%f in (*.mp4) do (
         cd ..
         rife-ncnn-vulkan -i input_frames/ -n !count! -m rife-v4.18 -o output_frames/ 2> NUL
         ffmpeg -r %tf% -i output_frames/%%08d.png -vcodec hevc_nvenc -preset slow -qp 5 -pix_fmt yuv420p10le "%%~nf_prerendered.mp4" 2> NUL
-        echo Adjusting File: %%f
+        echo Analyzing File: %%f
         SET /a crf_value = 0
         ab-av1 crf-search -i "%%~nf_prerendered.mp4" -e %enc% --preset %pre% --min-vmaf %5 --max-crf 45 --cache false > crf.txt && (
             for /f "tokens=1,2,3 delims= " %%a in ('findstr /c:"crf" crf.txt') do (
@@ -61,6 +61,7 @@ for %%f in (*.mp4) do (
         ffmpeg -r %tf% -i output_frames/%%08d.png -vcodec %enc% -preset %pre% -crf !crf_value! -pix_fmt yuv420p10le "%%~nf_new.mkv" 2> NUL
         del "%%~nf_prerendered.mp4"
     ) else (
+        echo Analyzing Frames: %%f -- !currentfilenum! / !filecounter!
         ab-av1 crf-search -i "%%f" -e %enc% --preset %pre% --min-vmaf %5 --max-crf 45 --cache false > crf.txt && (
             for /f "tokens=1,2,3 delims= " %%a in ('findstr /c:"crf" crf.txt') do (
                 if "%%a"=="crf" (
